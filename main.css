@@ -1,10 +1,174 @@
+/**********************************************************
+ *********************** COMPONENTS ***********************
+ **********************************************************/
+
 body {
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: #0099CC;
+    margin: 0px;
+    min-width: 320px;
 }
 
+/**********************************************************
+ ************************ HEADER **************************
+ **********************************************************/
+
 .header {
-    height: 60px;
+    min-height: 62px;
+    height: 62px;
+    max-height: 62px;
     width: 100%;
-    background-color: #404040;
+    display: inline;
 }
+
+.desktop_header_table, .desktop_header_table tr, .desktop_header_table td {
+    padding: 0;
+}
+
+.desktop_header_table {
+    width: 100%;
+    background-color: #0099CC;
+}
+
+.mobile_header_table {
+    display: none;
+}
+
+.header a {
+    color: #fff;
+    font-size: 1em;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.header a:link, .header a:visited, .header a:hover, .header a:active {
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: #0000CC;
+}
+
+.header a:active {
+    color: #000080;
+}
+
+.header h1 {
+    margin: 0px;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+.header_menu_left {
+    /* not needed */
+    text-align: left;
+}
+
+.header_menu_right {
+    text-align: right;
+}
+
+.mobile_header_button {
+    text-align: right;
+}
+
+.mobile_header_table h1 {
+    padding-left: 25px;
+}
+
+
+/**********************************************************
+ *********************** CONTENT **************************
+ **********************************************************/
+
+.content {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: #0099CC;
+}
+
+.content_body {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #f8f8f8;
+    width: 1360px;
+    margin: auto;
+    display: inline-block;
+    text-align: left;
+}
+
+.content_body_text {
+    padding-left: 10px;
+    padding-top: 100px;
+}
+
+.content_body_text h1 {
+    font-size: 2.7em;
+    text-align: center;
+    color: #000060;
+}
+
+/**********************************************************
+ ********************* MEDIA QUERIES **********************
+ **********************************************************/
+
+@media (max-width: 1400px) {
+    .content_body {
+        width: 980px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content_body {
+        width: 740px;
+    }
+    .desktop_header_table {
+        display: none;
+    }
+    .mobile_header_table {
+        display: inline;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content_body {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media (max-width: 640px) {
+    .content_body {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content_body {
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 360px) {
+    .content_body {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/**********************************************************
+ ************************ OTHER ***************************
+ **********************************************************/
+/* Include this in the first line to import Open Sans 
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+*/
