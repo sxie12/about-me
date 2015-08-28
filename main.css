@@ -4,7 +4,7 @@
 
 body {
     width: 100%;
-    background-color: #0099CC;
+    background-color: #f9f9f9;
     margin: 0px;
     min-width: 320px;
 }
@@ -87,7 +87,6 @@ body {
     display: inline-block;
     width: 100%;
     text-align: center;
-    background-color: #0099CC;
 }
 
 .content_body {
@@ -98,15 +97,15 @@ body {
     margin: auto;
     display: inline-block;
     text-align: left;
+    background-color: #fff;
 }
 
 .content_body_text {
-    padding-left: 10px;
-    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 
-.content_body_text h1 {
-    font-size: 2.7em;
+.content_body h1 {
     text-align: center;
     color: #000060;
 }
