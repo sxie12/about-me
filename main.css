@@ -1,3 +1,5 @@
+/* About me */
+
 /**********************************************************
  *********************** COMPONENTS ***********************
  **********************************************************/
@@ -29,6 +31,7 @@ body {
 .desktop_header_table {
     width: 100%;
     background-color: #0099CC;
+    height: 62px;
 }
 
 .mobile_header_table {
@@ -50,6 +53,7 @@ body {
     color: #0000CC;
 }
 
+/* Currently not in use */
 .header a:active {
     color: #000080;
 }
@@ -78,7 +82,7 @@ body {
 
 .mobile_header_button {
     right: 10px;
-    top: 7px;
+    top: 9px;
     position: absolute;
 }
 
@@ -93,6 +97,16 @@ body {
     padding: 0;
     line-height: 0;
     font-family: Arial;
+}
+
+.mobile_header_button_style:hover {
+    color: #0000CC;
+    border-color: #0000CC;
+}
+
+.mobile_header_button_style:active {
+    color: #000080;
+    border-color: #000080;
 }
 
 /**********************************************************
@@ -148,6 +162,7 @@ body {
         display: inline-block;
         width: 100%;
         background-color: #0099CC;
+        height: 62px;
     }
     .content_body_text {
         padding-left: 10px;
