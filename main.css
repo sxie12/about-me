@@ -68,11 +68,22 @@ body {
 
 .header_menu_left {
     /* not needed */
-    text-align: left;
+    text-align: left; 
+}
+
+.header_menu_left, .header_menu_right {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.header_menu_left li, .header_menu_right li {
+    display: inline;
 }
 
 .header_menu_right {
     text-align: right;
+    padding-left: 0px;
+    padding-right: 20px;
 }
 
 .mobile_header_table h1 {
@@ -110,9 +121,24 @@ body {
 }
 
 /**********************************************************
- *********************** CONTENT **************************
+ ********************** DROP DOWN *************************
  **********************************************************/
 
+.drop_down_contents {
+    display: none;
+    background: #0099CC;
+    position: absolute;
+}
+
+.drop_down:hover .drop_down_contents {
+    display: block;
+    z-index: 100;
+}
+
+
+/**********************************************************
+ *********************** CONTENT **************************
+ **********************************************************/
 .content {
     display: inline-block;
     width: 100%;
@@ -130,15 +156,20 @@ body {
     background-color: #fff;
 }
 
-.content_body_text {
-    padding-left: 20px;
-    padding-right: 10px;
-    padding-top: 50px;
-}
-
 .content_body h1 {
     text-align: center;
     color: #000060;
+    margin-top: 40px;
+    margin-bottom: 90px;
+}
+
+.content_body_text {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.content_body_text h3 {
+    color: #0000CC;
 }
 
 /**********************************************************
@@ -164,10 +195,13 @@ body {
         background-color: #0099CC;
         height: 62px;
     }
+    .content_body h1 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
     .content_body_text {
         padding-left: 10px;
         padding-right: 10px;
-        padding-top: 10px;
     }
 }
 
