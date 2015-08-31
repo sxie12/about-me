@@ -22,6 +22,7 @@ body {
     width: 100%;
     display: inline;
     background-color: #0099CC;
+    overflow: hidden;
 }
 
 .desktop_header_table, .desktop_header_table tr, .desktop_header_table td {
