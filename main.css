@@ -12,7 +12,7 @@ body {
 }
 
 /**********************************************************
- ************************ HEADER **************************
+ ******************** DESKTOP HEADER **********************
  **********************************************************/
 
 .header {
@@ -31,11 +31,8 @@ body {
 
 .desktop_header_table {
     width: 100%;
-    background-color: #0099CC;
+    background-color: #09C;
     height: 62px;
-    /* 
-    height: 100%;
-    */
 }
 
 .mobile_header_table {
@@ -47,6 +44,8 @@ body {
     font-size: 1em;
     padding-left: 25px;
     padding-right: 25px;
+    width: 84px;
+    text-align: center;
 }
 
 .header a:link, .header a:visited, .header a:hover, .header a:active {
@@ -54,7 +53,7 @@ body {
 }
 
 .header a:hover {
-    color: #0000CC;
+    color: #00C;
 }
 
 /* Currently not in use */
@@ -65,36 +64,38 @@ body {
 .header h1 {
     margin: 0px;
     text-align: center;
-    color: #fff;
+    color: #FFF;
     padding-top: 10px;
     padding-bottom: 8px;
 }
 
 .header_menu_left {
-    /* not needed */
-    text-align: left; 
+    padding-left: 15px;
+    padding-right: 0px;
+}
+
+.header_menu_right {
+    padding-left: 0px;
+    padding-right: 15px;
 }
 
 .header_menu_left, .header_menu_right {
     list-style-type: none;
-    padding-left: 20px;
-    /*
-    height: 62px;
+    height: 58px; 
     margin-top: 0px;
     margin-bottom: 0px;
-    */
+    display: inline-block;
+    line-height: 3.5;
 }
 
-.header_menu_left li, .header_menu_right li {
-    display: inline;
-    height: 100%;
+.header_menu_left li, .header_menu_right li, .header_menu_left li a, .header_menu_right li a {
+    display: inline-block;
+    height: 62px;
 }
 
-.header_menu_right {
-    text-align: right;
-    padding-left: 0px;
-    padding-right: 20px;
-}
+/**********************************************************
+ ******************** MOBILE HEADER ***********************
+ **********************************************************/
 
 .mobile_header_table h1 {
     padding-left: 15px;
@@ -110,10 +111,10 @@ body {
 .mobile_header_button_style {
     height: 40px;
     width: 40px;
-    border: 2px solid #fff;
+    border: 2px solid #FFF;
     border-radius: 5px;
     background-color: transparent;
-    color: #fff;
+    color: #FFF;
     font-size: 2.2em;
     padding: 0;
     line-height: 0;
@@ -121,8 +122,8 @@ body {
 }
 
 .mobile_header_button_style:hover {
-    color: #0000CC;
-    border-color: #0000CC;
+    color: #00C;
+    border-color: #00C;
 }
 
 .mobile_header_button_style:active {
@@ -136,13 +137,28 @@ body {
 
 .drop_down_contents {
     display: none;
-    background: #0099CC;
     position: absolute;
     top: 62px;
-    left: 60px;
-    width: 100px;
+    left: 156px;
+    width: 134px;
     list-style-type: none;
     text-align: center;
+    padding: 0;
+    line-height: 1;
+}
+
+.drop_down_contents li {
+    height: 36px;
+}
+
+.drop_down_contents li a {
+    background-color: #000080;
+    color: #0FF;
+    text-align: center;
+    padding: 0;
+    width: 134px;
+    height: 36px;
+    line-height: 1.85;
 }
 
 .drop_down:hover .drop_down_contents {
@@ -150,6 +166,9 @@ body {
     z-index: 100;
 }
 
+.drop_down_contents li a:hover {
+    color: #FFF;
+}
 
 /**********************************************************
  *********************** CONTENT **************************
@@ -163,12 +182,12 @@ body {
 .content_body {
     border-top-width: 1px;
     border-top-style: solid;
-    border-top-color: #f8f8f8;
+    border-top-color: #F8F8F8;
     width: 1360px;
     margin: auto;
     display: inline-block;
     text-align: left;
-    background-color: #fff;
+    background-color: #FFF;
 }
 
 .content_body h1 {
@@ -184,7 +203,7 @@ body {
 }
 
 .content_body_text h3 {
-    color: #0000CC;
+    color: #00C;
 }
 
 /**********************************************************
