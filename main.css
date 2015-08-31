@@ -74,6 +74,11 @@ body {
 .header_menu_left, .header_menu_right {
     list-style-type: none;
     padding-left: 20px;
+    /*
+    height: 62px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    */
 }
 
 .header_menu_left li, .header_menu_right li {
@@ -128,6 +133,11 @@ body {
     display: none;
     background: #0099CC;
     position: absolute;
+    top: 62px;
+    left: 60px;
+    width: 100px;
+    list-style-type: none;
+    text-align: center;
 }
 
 .drop_down:hover .drop_down_contents {
@@ -159,7 +169,7 @@ body {
 .content_body h1 {
     text-align: center;
     color: #000060;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 90px;
 }
 
