@@ -23,6 +23,7 @@ body {
     display: inline;
     background-color: #0099CC;
     overflow: hidden;
+    opacity: 1;
 }
 
 .desktop_header_table, .desktop_header_table tr, .desktop_header_table td {
@@ -33,7 +34,16 @@ body {
     width: 100%;
     background-color: #09C;
     height: 62px;
+    position: fixed;
+    top: 0;
+    opacity: 1;
 }
+
+/* Not needed
+.desktop_header_table:hover {
+    opacity: 1;
+}
+*/
 
 .mobile_header_table {
     display: none;
@@ -62,7 +72,7 @@ body {
 }
 
 .header h1 {
-    margin: 0px;
+    margin: 0;
     text-align: center;
     color: #FFF;
     padding-top: 10px;
@@ -193,17 +203,30 @@ body {
 .content_body h1 {
     text-align: center;
     color: #000060;
-    margin-top: 30px;
+    margin-top: 92px;
     margin-bottom: 90px;
 }
 
 .content_body_text {
     padding-left: 20px;
-    padding-right: 10px;
+    padding-right: 15px;
+}
+
+.content_body_text h2 {
+    color: #00C;
 }
 
 .content_body_text h3 {
-    color: #00C;
+    color: #0F4BFF;
+    margin-bottom: 10px;
+}
+
+.content_body_text p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Verdana;
+    font-size: 1.05em;
+    line-height: 1.5em;
 }
 
 /**********************************************************
