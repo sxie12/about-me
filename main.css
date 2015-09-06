@@ -168,7 +168,7 @@ body {
     padding: 0;
     width: 134px;
     height: 36px;
-    line-height: 1.85;
+    line-height: 2;
 }
 
 .drop_down:hover .drop_down_contents {
@@ -214,6 +214,8 @@ body {
 
 .content_body_text h2 {
     color: #00C;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .content_body_text h3 {
@@ -227,6 +229,13 @@ body {
     font-family: Verdana;
     font-size: 1.05em;
     line-height: 1.5em;
+}
+
+.anchor {
+    display: block;
+    height: 62px;
+    margin-top: -62px;
+    visibility: hidden;
 }
 
 /**********************************************************
