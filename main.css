@@ -39,12 +39,6 @@ body {
     opacity: 1;
 }
 
-/* Not needed
-.desktop_header_table:hover {
-    opacity: 1;
-}
-*/
-
 .mobile_header_table {
     display: none;
 }
@@ -52,8 +46,8 @@ body {
 .header a {
     color: #fff;
     font-size: 1em;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 84px;
     text-align: center;
     outline: none;
@@ -80,23 +74,14 @@ body {
     padding-bottom: 8px;
 }
 
-.header_menu_left {
-    padding-left: 15px;
-    padding-right: 0px;
-}
-
-.header_menu_right {
-    padding-left: 0px;
-    padding-right: 15px;
-}
-
 .header_menu_left, .header_menu_right {
+    padding: 0px;
     list-style-type: none;
     height: 58px; 
     margin-top: 0px;
     margin-bottom: 0px;
     display: inline-block;
-    line-height: 3.5;
+    line-height: 3.8;
 }
 
 .header_menu_left li, .header_menu_right li, .header_menu_left li a, .header_menu_right li a {
@@ -150,8 +135,8 @@ body {
     display: none;
     position: absolute;
     top: 62px;
-    left: 156px;
-    width: 134px;
+    left: 121px;
+    width: 114px;
     list-style-type: none;
     text-align: center;
     padding: 0;
@@ -167,7 +152,7 @@ body {
     color: #0FF;
     text-align: center;
     padding: 0;
-    width: 134px;
+    width: 114px;
     height: 36px;
     line-height: 2;
 }
